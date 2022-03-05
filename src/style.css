@@ -1,0 +1,578 @@
+/*  SELETOR UNIVERSAL */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*  FIM SELETOR UNIVERSAL*/
+
+/*  GOOGLE FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto:ital,wght@0,400;0,700;0,900;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Magra:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Magra&display=swap');
+/*  FIM GOOGLE FONTS */
+
+/* SELETORES TEXTO */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 12pt;
+    background-color: #F8F8F8;
+
+}
+h1 {
+    font-family: 'Magra', sans-serif;
+    font-weight: 700;
+    font-size: 200%;
+    font-style: normal;
+    color: #FF475D;
+}
+h1.titulo-form {
+    background-repeat: no-repeat;
+    background-position: top left;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+h1 img{
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+h2 {
+    color: #FF475D;
+    font-family: 'Magra', sans-serif;
+    font-weight: 700;
+    font-size: 150%;
+    margin-bottom: 20px;
+}
+.opening {
+    max-width: 500px;
+    margin: 0 auto;
+}
+a{
+    color: #FF475D;
+}
+a:hover{
+    color: #1C17F2;
+    
+}
+hr {
+    border-top: solid 4px #1C17F2;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    margin: 30px 0;
+}
+
+/* FIM SELETORES TEXTO */
+
+/*  HEADER */
+header {
+    position: fixed;
+    top: 50px;
+    width: 100%;
+}
+nav {
+    position: relative;
+    max-width: 810px;
+    margin: 0px auto;
+}
+nav ul {
+    text-align: right;
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 0;
+
+}
+nav li{
+    display: inline-block;
+    width: 100px;
+    padding: 15px;
+    background-color:#1C17F2; 
+    color: white;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-align: center;
+    border: solid 2px #F8F8F8;
+}
+nav li:hover {
+    background-color: white;
+    color:#1C17F2; 
+    border-color:#1C17F2;
+}
+nav li.signin {
+    background-color: #FF475D;
+}
+nav li.signin:hover {
+    background-color: white;
+    color: #FF475D;
+    border-color: #FF475D;
+}
+nav a{
+    color:white;
+}
+nav a:hover {
+    color: black;
+}
+.logo {
+    position: absolute;
+    left: 30px;
+    top:-40px;
+    width: 201px;
+    height: 126px;
+    background-image: url(images/logo.svg);
+    transform: scale(0.8);
+    
+}
+
+/* FIM DO HEADER */
+
+/* CONTEÚDO */
+main {
+    max-width: 750px;
+    margin: 300px auto 50px;
+    padding: 0 40px 0;
+}
+
+
+
+
+/* FORMULÁRIO HOME */
+fieldset {
+    margin: 0px;
+    border: none;
+}
+input, button {
+    margin: 0px;
+    border: 2px solid #1C17F2;
+    padding: 15px;
+    border-radius: 40px;
+    color: #1C17F2;
+    font-size: 90%;
+    outline: none;
+}
+.form-home {
+    background-color: white;
+}
+.pesquisaHome{
+    margin-top: 70px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 50fr 1fr;
+    column-gap: 3px;
+}
+.home-send {
+    background-image: url(images/search.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    border-color:#FF475D ;
+    background-color: #FF475D;
+}
+.home-send:hover {
+    background-color: #1C17F2;
+    border-color: #1C17F2;
+}
+::placeholder { 
+    color: #1C17F2;
+    opacity: 1;
+  }
+
+.advanced {
+    font-size: 12px;
+    margin-top: 20px;
+    text-align: right;
+    margin-bottom: 50px;
+    margin-left: 100px;
+}
+.obrigado {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.explore {
+    max-width: 400px;
+    display: block;
+    margin: 10px auto 0px;
+    background-color: #FF475D;
+    padding: 20px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 80%;
+    text-align: center;
+}
+a.explore {
+    color: white;
+    border: 2px solid #F8F8F8;
+}
+a.explore:hover {
+    background-color: white;
+    color:#FF475D;
+    border-color: #FF475D;
+    
+}
+/* FIM FORMULÁRIO HOME */
+
+/* FORMULÁRIO SIGNIN */
+.tagline {
+    border-top: solid 2px #FF475D;
+    border-bottom: solid 2px #FF475D;
+    padding: 20px;
+    text-align: center;
+}
+.cadastro {
+    margin-top: 50px;
+}
+input.allscreen {
+    width: 95%;
+    margin-bottom: 10px;
+}
+input.half-screen{
+    margin-bottom: 10px;
+    width: 45%;
+    margin-right: 10px;
+    display: inline;
+}
+.two-column {
+    column-count: 2;
+    column-gap: 30px;
+    width: 97%;
+
+}
+textarea {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    border: solid 2px #1C17F2;
+    color:#1C17F2;
+    width: 94%;
+    border-radius: 30px;
+    font-size: 11pt;
+    text-align: left;
+    margin-bottom: 10px;
+    outline: none;
+    resize: none;
+}
+.send {
+    background-color: #FF475D;
+    color: white;
+    width: 250px;
+    border: none;
+    padding: 15px;
+    height: 50px;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+.send:hover {
+    background-color: #1C17F2;
+}
+.to-right{
+    text-align: right;
+}
+#cadSucesso {
+    background-color: #1C17F2;
+    color: white;
+    padding: 20px;
+    margin: 20px 0px;
+    border-radius: 30px;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+#cadErro {
+    background-color: #FF475D;
+    color: white;
+    padding: 20px;
+    margin: 20px 0px;
+    border-radius: 30px;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+
+/* FIM FORMULÁRIO SIGNIN */
+
+/* FIM CONTEÚDO */
+
+/* MENU HAMBURGUER */
+.menu {
+    width: 50px;
+    height: 50px;
+    background-color: #FF475D;
+    border-radius:50%;
+    position: fixed;
+    right: 30px;
+    top: 50px;
+    cursor: pointer;
+    box-shadow: 0 0 0 0px #FF475D, 0 0 0 0px #FF475D;
+}
+.menu:hover {
+    box-shadow: 0 0 0 5px #FF475D, 0 0 0 5px #FF475D;
+    transition: box-shadow 0.25s ease-in-out;
+}
+.hamburger {
+    display: block;
+    background: white;
+    width: 15px;
+    height: 2px;
+    position: relative;
+    top: 25px;
+    left: 18px;
+    transition: 0.5s ease-in-out;
+}
+.hamburger::before, .hamburger::after{
+    background: white;
+    content:' ' ;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+}
+.hamburger::before {
+    top: -5px;
+}
+.hamburger::after {
+    bottom: -5px;
+}
+input#menu-hamburger {
+    display: none;
+}
+input#menu-hamburger:checked ~ label .hamburger{
+    transform: rotate(45deg);
+}
+input#menu-hamburger:checked ~ label .hamburger::before{
+    transform: rotate(90deg);
+    top: 0px;
+}
+input#menu-hamburger:checked ~ label .hamburger::after{
+    transform: rotate(90deg);
+    bottom: 0px;
+}
+input#menu-hamburger:checked ~ label .menu {
+    box-shadow: 0 0 0 130vw white, 0 0 0 100vh white;
+}
+ul.lista-menu > li > a{
+    text-decoration: none;
+    color:blue;
+    display: block;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+ul.lista-menu{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    list-style: none;
+}
+ul.lista-menu > li {
+    display: none;
+}
+input#menu-hamburger:checked ~ ul.lista-menu > li {
+    display: block;
+}
+input#menu-hamburger:checked ~ ul.lista-menu{
+    opacity: 1;
+    transition: 0.5s 0.5s ease-in-out;
+}
+
+
+/* FIM MENU */
+
+
+/* FIM MEDIA QUERIES */
+
+/* LISTAGEM EMPRESAS */
+.wrapper-listagem {
+    margin-top: 100px;
+}
+section {
+    background: white;
+    margin-left: 100px;
+    position: relative;
+
+
+    margin-bottom: 30px;
+}
+.imagem-empresa img {
+    left: -100px;
+    top:50px;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #FF475D;
+}
+section > h3 {
+    font-family: Magra, sans-serif;
+    font-size: 16pt;
+    margin-bottom: 30px;
+    color: #FF475D;
+}
+.wrapper-sobre-empresa {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.wrapper-sobre-empresa  h4 {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 9pt;
+    font-weight: 500;
+}
+.listagem-empresas {
+    padding-left: 120px;
+    padding-top: 50px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.descricao-empresa {
+    width: 70%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10pt;
+    line-height: 155%;
+    min-width: 200px;
+}
+.listagem-interesses {
+    width: 25%;
+    text-transform: uppercase;
+    line-height: 150%;
+    font-size: 8pt;
+
+}
+.listagem-interesses p{
+    color: #1C17F2;
+}
+.listagem-interesses > ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.listagem-interesses > ul > li {
+    border-bottom: solid 1px #FF475D;
+    margin-bottom: 10px;
+}
+.contato {
+    font-size: 10pt;
+    width: 100%;
+    margin-top: 30px;
+    padding: 20px;
+    border-top: solid 2px #FF475D;
+    background-color: #FF475D;
+    border-radius: 10px 0px  10px 0px;
+    color: white;
+    column-count: 2;
+    column-gap: 10px;
+}
+.contato p {
+    line-height: 17pt;
+}
+.contato strong {
+    font-family: 'Roboto', sans-serif;
+    font-size: 9pt;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.mapa img {
+    width: 100%;
+}
+.mapa h4 {
+    margin-bottom: 10px;
+}
+.site {
+    margin-top: 10px;
+    margin-left: 5px;
+    width: 100%;
+    font-size: 10pt;
+    text-align: left;
+}
+.distancia-empresas {
+    display: block;
+    color: #1C17F2;
+    font-size: 12px;
+}
+.space {
+    border: 0px;
+    margin-top: 0 0 20px;
+}
+.edit-delete {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 80px;
+    display: none;
+}
+button.edit,  button.delete {
+    background-color: white;
+    border: none;
+    padding: 5px;
+    margin: 0px;
+    height: 35px;
+    width: 35px;
+    border: solid 2px white;
+}
+button.edit:hover,  button.delete:hover {
+    border: solid 2px #FF475D;
+    border-radius: 50%;
+    
+}
+.not-found {
+    color: #1C17F2;
+    max-width: 500px;
+    margin: 20 auto;
+}
+
+
+
+/* MEDIA QUERIES */
+@media (min-width: 650px) {
+    .hamburger, .menu {
+        display: none;
+    }
+
+    
+}
+@media (max-width: 650px) {
+    nav > ul {
+        display: none;
+    }
+    section.listagem-empresas {
+        margin-left: 0px;
+        margin-top: 200px;
+        padding-top: 130px;
+        padding-left: 20px;
+
+    }
+    .imagem-empresa img{
+        top:-100px;
+        left: 50%;
+        transform: translate(-50%);
+    
+    }
+    .mapa {
+        margin-left: 0px;
+    }
+    
+    .listagem-interesses {
+        width: 100%;
+    }
+    .descricao-empresa {
+        width: 100%;
+        margin-bottom: 20px;
+        padding-right: 20px;
+    }
+}
+
+
+/* TIRAR OU COLOCAR DA TELA */
+.ndisplay{
+    display: none;
+}

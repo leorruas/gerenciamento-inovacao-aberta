@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>nicho</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" maximum-width="2.0">
+        <meta name="author" content="Léo Ruas, Luiz Felipe Rodrigues Duhau, Marselle Vivianne Lins Figueiredo Dutra, Ana Flávia Santiago de Andrade">
+        <link rel="stylesheet" type="text/css" media="all" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Magra:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">    
+    </head>
+    <body>
+
+        
+    
+        <! – CONTEÚDO ->
+        <main>
+           <h1 class="titulo-form"> <img src="images/signin.svg"> Seu negócio disponível para toda a comunidade </h1>
+            <div class="tagline">Preencha o formulário abaixo para conhecermos melhor você e o seu negócio</div>
+
+
+            <! - FORMULÁRIO DE CADASTRO - !>
+            <div class="cadastro">
+
+                    <form id="novaEmpresa">
+                        <h2>sobre você</h2>
+                        <input class="allscreen" id="nome" type="text" placeholder="seu nome" required>
+                        <input class="allscreen" id="email" type="email" placeholder="seuemail@dominio.com" required>
+                        
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                        <h2>sobre sua empresa</h2>
+                        <input type="text" id="nomeEmpresa" class="allscreen" placeholder="nome da sua empresa" required>
+                        <input type="text" id="interesses" class="allscreen" placeholder="quais os interesses da sua empresa" required>
+                        <textarea id="sobre" placeholder="sobre sua empresa (um breve resumo sobre seu negócio e a(s) área(s) que atua(m)"  required></textarea>
+                        <input type="text" id="atuacao" class="allscreen" placeholder="áreas de atuação (separe cada área por vírgulas)" required>
+                        <div class="two-column">
+                        <input id="telefone" type="text" class="allscreen" placeholder="telefone de contato" required>
+                        <input id="site" type="url" class="allscreen"  placeholder="http://website.com" value="http://" required>
+                        <input id="linkedin" type="url" class="allscreen" placeholder="linkedin">    
+                        <input id="facebook" type="url" class="allscreen"  placeholder="facebook"></div>
+                        <input id="endereco" type="text" class="allscreen"  placeholder="endereço" required> 
+                        <div class="to-right"><button type="button" id="send" class="send" onclick="saveClient();">enviar</button></div>                  
+                    </form>
+
+            </div>
+            <div id="cadSucesso" class="ndisplay">lalalal</div>
+            <div id="cadErro" class="ndisplay"></div>
+        </div>
+        <! - FIM FORMULÁRIO DE CADASTRO - !>
+        </main>
+        <! – FIM DO CONTEÚDO ->
+       
+       
+       
+       
+       
+        <! – HEADER ->
+        <header>
+            <nav>
+                <a href="index.html" "><div class="logo"></div></a>
+                <ul>
+                    <a href="index.html" "><li>explore</li></a>
+                    <a href="signin.html" ><li class="signin">sign up / sign in</li></a>
+                </ul>
+            </nav>
+        </header>
+        <! – FIM DO HEADER ->
+        <! - MENU HAMBURGER - !>
+        <input id="menu-hamburger" type="checkbox">
+        <label for="menu-hamburger">
+            <div class="menu"><span class="hamburger"></span></div>
+        </label>
+        <ul class="lista-menu">
+            <li><a href="index.html" ">EXPLORE</a></li>
+            
+            <li><a href="signin.html" ">SIGN / SIGNUP</a></li>
+            
+        </ul>
+        <! - FIM DO MENU HAMBURGER - !>
+        <script type="text/javascript" src="js/javascript.js"></script>
+    </body>
+</html>
